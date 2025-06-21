@@ -2,8 +2,6 @@
 
 An interactive 3D globe to visualize real-time and historical global data, including wildfires, climate patterns, and natural disasters.
 
-![Digital Earth Screenshot]
-
 ## Features
 
 - **Interactive 3D Globe:** Explore global datasets on a responsive 3D globe built with Three.js and React.
@@ -65,6 +63,8 @@ Edit the `.env` file with your Supabase credentials:
 \`\`\`
 SUPABASE_URL=YOUR_SUPABASE_URL
 SUPABASE_KEY=YOUR_SUPABASE_KEY
+OPENWEATHER_API_KEY=YOUR_OPENWEATHER_KEY
+
 \`\`\`
 
 ### 2. Database Setup
