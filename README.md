@@ -40,7 +40,7 @@ An interactive 3D globe to visualize real-time and historical global data, inclu
 
 First, set up the Python environment and install dependencies.
 
-\`\`\`bash
+```bash
 # Navigate to the server directory
 cd server
 
@@ -50,22 +50,21 @@ source .venv/bin/activate  # On Windows, use `.venv\\Scripts\\activate`
 
 # Install dependencies
 pip install -r requirements.txt
-\`\`\`
+```
 
 Next, configure your environment variables. Create a file named `.env` inside the `server/` directory by copying the example:
 
-\`\`\`bash
+```bash
 # Make sure you are in the server/ directory
 cp .env.example .env  # or create .env manually
-\`\`\`
+```
 
 Edit the `.env` file with your Supabase credentials:
-\`\`\`
+```
 SUPABASE_URL=YOUR_SUPABASE_URL
 SUPABASE_KEY=YOUR_SUPABASE_KEY
 OPENWEATHER_API_KEY=YOUR_OPENWEATHER_KEY
-
-\`\`\`
+```
 
 ### 2. Database Setup
 
@@ -75,25 +74,25 @@ The necessary tables are defined in the `supabase/migrations/` directory. Run th
 
 In a new terminal, navigate to the project root and install the Node.js dependencies.
 
-\`\`\`bash
+```bash
 # From the project root
 npm install
-\`\`\`
+```
 
 ## Running the Application
 
 1.  **Start the Backend Server:**
     Make sure you are in the `server/` directory with your virtual environment activated.
-    \`\`\`bash
+    ```bash
     python app.py
-    \`\`\`
+    ```
     The backend will be running on `http://localhost:5000`.
 
 2.  **Start the Frontend Development Server:**
     In another terminal, from the project root directory:
-    \`\`\`bash
+    ```bash
     npm run dev
-    \`\`\`
+    ```
     The frontend will be available at `http://localhost:5173`.
 
 ## Data Ingestion
@@ -101,7 +100,7 @@ npm install
 The `server/` directory contains several `*_ingestion.py` scripts. These are designed to be run manually or on a schedule to populate the database with data from external sources.
 
 To run an ingestion script:
-\`\`\`bash
+```bash
 # Make sure you are in the server/ directory with your venv active
 python fire_ingestion.py
-\`\`\`
+```
