@@ -103,4 +103,5 @@ To run an ingestion script:
 ```bash
 # Make sure you are in the server/ directory with your venv active
 python fire_ingestion.py
+python run_disaster_ingestion.py
 ```
