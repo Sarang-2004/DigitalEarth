@@ -2,7 +2,7 @@
 
 An interactive 3D globe to visualize real-time and historical global data, including wildfires, climate patterns, and natural disasters.
 
-![Digital Earth Screenshot](<placeholder_for_screenshot.png>)
+![Digital Earth Screenshot]
 
 ## Features
 
@@ -101,7 +101,7 @@ npm install
 1.  **Start the Backend Server:**
     Make sure you are in the `server/` directory with your virtual environment activated.
     \`\`\`bash
-    flask run
+    python app.py
     \`\`\`
     The backend will be running on `http://localhost:5000`.
 
