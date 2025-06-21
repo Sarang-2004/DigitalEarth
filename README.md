@@ -31,22 +31,6 @@ An interactive 3D globe to visualize real-time and historical global data, inclu
 **Database:**
 - [Supabase](https://supabase.io/) (PostgreSQL)
 
-## Project Structure
-\`\`\`
-DigitalEarth/
-├── server/             # Python Flask Backend
-│   ├── app.py          # Main Flask application
-│   ├── *_ingestion.py  # Scripts for data ingestion
-│   └── requirements.txt# Python dependencies
-├── src/                # React Frontend
-│   ├── components/     # React components (e.g., Globe3D)
-│   ├── pages/          # Main application pages
-│   ├── App.jsx         # Main React app component
-│   └── main.jsx        # Entry point for the React app
-├── supabase/           # Supabase migrations
-└── public/             # Static assets
-\`\`\`
-
 ## Setup and Installation
 
 ### Prerequisites
